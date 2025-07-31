@@ -40,7 +40,7 @@ You need a web browser to view the website.
 
 1.  Clone the repo
     ```sh
-    git clone [https://github.com/your_username/your_repository.git](https://github.com/your_username/your_repository.git)
+    git clone [https://github.com/guru3697/Portfolio.git](https://github.com/your_username/your_repository.git)
     ```
 2.  Navigate to the project directory
     ```sh
