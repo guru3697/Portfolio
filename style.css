@@ -22,13 +22,16 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
-    scroll-behavior: smooth;
 }
 
 /* Preloader */
@@ -302,7 +305,6 @@ input:checked + .slider:before {
     color: var(--primary-color);
 }
 
-
 /* Project Section */
 .project-grid {
     display: grid;
@@ -318,6 +320,7 @@ input:checked + .slider:before {
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
+    height: 100%; /* The fix for card alignment */
 }
 
 .project-card:hover {
@@ -330,8 +333,8 @@ input:checked + .slider:before {
     color: var(--primary-color);
 }
 
-.project-card p {
-    flex-grow: 1;
+.project-card .project-description {
+    flex-grow: 1; /* Fix for aligning buttons */
 }
 
 .project-card .tech-stack {
@@ -339,37 +342,27 @@ input:checked + .slider:before {
     color: var(--secondary-color);
     margin-top: 1rem;
     margin-bottom: 1rem;
-    flex-grow: 0;
 }
 
-.project-links a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/* This centers the "View Project" button inside the card */
 .project-links {
     text-align: center;
-    margin-top: 1.5rem; /* Adds some space above the button */
+    margin-top: 1.5rem;
 }
 
-/* This styles the link itself to look like a button with a box */
 .project-link {
-    display: inline-block; /* Needed to apply padding correctly */
-    border: 2px solid var(--primary-color); /* Creates the border */
-    padding: 8px 24px;      /* Adds space inside the box (top/bottom, left/right) */
-    border-radius: 50px;    /* Gives it modern, rounded corners */
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    padding: 8px 24px;
+    border-radius: 50px;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
-    transition: all 0.3s ease; /* For a smooth hover effect */
+    transition: all 0.3s ease;
 }
 
-/* This makes the button fill with color when you hover over it */
 .project-link:hover {
     background-color: var(--primary-color);
-    color: #fff; /* Changes text to white on hover */
+    color: #fff;
 }
 
 /* Skills Section */
@@ -421,7 +414,8 @@ input:checked + .slider:before {
 }
 
 .card ul {
-    list-style-type: none;
+    padding-left: 20px;
+    list-style-type: disc;
 }
 
 .card ul li {
@@ -429,33 +423,12 @@ input:checked + .slider:before {
 }
 
 .card ul li a {
-    color: var(--text-color);
+    color: var(--secondary-color);
     text-decoration: none;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
-.card ul li a:hover {
-    color: var(--primary-color);
-}
-
-/* Style for lists in cards (Certifications & Publications) */
-.card ul {
-    /* This adds space on the left for the bullet points */
-    padding-left: 20px;
-    /* This ensures bullet points are displayed */
-    list-style-type: disc;
-}
-
-/* Style for the links within those lists */
-.card ul li a {
-    /* Use the theme's secondary color to make links stand out */
-    color: var(--secondary-color);
-    /* Add an underline to clearly indicate they are clickable */
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* Change link color on hover for a nice interactive effect */
 .card ul li a:hover {
     color: var(--primary-color);
 }
