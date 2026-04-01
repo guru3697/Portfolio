@@ -1,9 +1,3 @@
----
-
- 🧠 Complete Profile Knowledge Base – Gurunadh Kothuru
-
----
-
  🧑‍💼 Introduction / Profile Summary / About Me
 
 I am Gurunadh Kothuru, an aspiring AI Engineer and Machine Learning enthusiast, with a Bachelor of Technology in Artificial Intelligence Engineering from Amrita School of Engineering, Bangalore, with a GPA of 7.95.
